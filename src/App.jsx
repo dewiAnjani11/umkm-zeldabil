@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import Footer from './Components/Footer'
+import React from 'react'
+import {Route, Routes } from 'react-router-dom'
+import Home from './Page/Home'
 
-function App() {
+
+export default function App() {
   return (
-    <>
-    {/* <Footer/> */}
-    </>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+    </Routes>
   )
 }
-
-export default App
