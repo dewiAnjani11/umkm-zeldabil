@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import Header from '../Components/Header';
+import Header from '../Components/Header';
 import { Link, useParams } from 'react-router-dom';
 import Colors from '../Components/Colors';
 import Footer from '../Components/Footer';
@@ -114,7 +114,7 @@ const Categories = () => {
                   <div className='col col-2 p-1'>
                     <Link to={`/details/data/${datas.kategori.data.attributes.nama}/${item.id}`} className='card w-100 shadow border-0 bg-body-tertiary text-decoration-none'>
                       {foto ? (
-                        <img src={`http://localhost:1337${foto.attributes.url}`} className="card-img-top w-100" />
+                        <img src={`http://localhost:1337${foto.attributes.url}`} className="card-img-top w-100 " />
                       ) : (
                         <img src={`https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png`} className="card-img-top" />
                       )}
