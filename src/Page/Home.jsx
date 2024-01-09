@@ -4,7 +4,6 @@ import Colors from '../Components/Colors'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
-
 export default function Home() {
     const isMobile = useMediaQuery({maxWidth: 426})
     const isTablet = useMediaQuery({maxWidth : 769})
